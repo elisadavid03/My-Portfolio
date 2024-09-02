@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Planets</h1>
+    <!--starting point of the table-->
+    <table border="1" width="100%">
+            <tr>
+                <th colspan="2"></th>
+                <th>Name</th>
+                <th>Mass (10<sup>24</sup>kg)</th>
+                <th>Diameter (km)</th>
+            </tr>
+        <tr>
+            <th rowspan="4" align="center" colspan="2">Terrestrial planets</th>
+            <th>Mercury</th>
+            <td>0,330</td>
+            <td>4,879</td>
+        </tr>
+        <tr>
+            <th>Venus</th>
+            <td>4.87</td>
+            <td>12,104</td>
+        </tr>
+        <tr>
+            <th>Earth</th>
+            <td>5.97</td>
+            <td>12,756</td>
+        </tr>
+        <tr>
+            <th>Mars</th>
+            <td>0.642</td>
+            <td>6,792</td>
+        </tr>
+        <tr>
+            <th rowspan="4" align="center" colspan="1">Jovian planets</th>
+            <th rowspan="2" align="center">Gas giants</th>
+            <th>Jupiter</th>
+            <td>1898</td>
+            <td>142,984</td>
+        </tr>
+        <tr>
+            <th>Saturn</th>
+            <td>568</td>
+            <td>120,536</td>
+        </tr>
+        </tr>
+        <tr>
+            <th rowspan="2" align="center">Ice giants</th>
+            <th>Uranus</th>
+            <td>86.8</td>
+            <td>51,118</td>
+        </th>
+        <tr>
+            <th>Neptune</th>
+            <td>102</td>
+            <td>49,528</td>
+        </tr>
+        <tr>
+            <th rowspan="1" align="center" colspan="2">Dwarf planets</th>
+            <th>Pluto</th>
+            <td>0.0146</td>
+            <td>2,370</td>
+        </tr>
+    </table>
+<!-- end of the table-->
+<form>
+<!--starting point of the form-->
+    <fieldset>
+        <legend style="text-align: center;">Ask us about planets</legend>
+        <div>
+            <label for="full name">Full name</label>
+            <input 
+            type="text"
+            id="full name"
+            placeholder="Enter your full name"
+            />
+        </div>
+        <br/>
+        <div>
+            <label for="email">Email</label>
+            <input 
+            type="text"
+            id="email"
+            placeholder="Enter your email"
+            />
+        </div>
+        <div>
+            <p>Favourite planet:</p>
+            <input type="radio" name="planet" id="mercury" value="Mercury">
+            <label for="Mercury">Mercury</label><br>
+            <input type="radio" name="planet" id="venus" value="Venus">
+            <label for="Venus">Venus</label><br>
+            <input type="radio" name="planet" id="earth" value="Earth" checked>
+            <label for="Earth">Earth</label><br>
+            <input type="radio" name="planet" id="mars" value="Mars">
+            <label for="Mars">Mars</label><br>
+            <input type="radio" name="planet" id="jupiter" value="Jupiter">
+            <label for="jupiter">Jupiter</label><br>
+            <input type="radio" name="planet" id="saturn"value="Saturn">
+            <label for="saturn">Saturn</label><br>
+            <input type="radio" name="planet"  id="uranus" value="Uranus">
+            <label for="uranus">Uranus</label><br>
+            <input type="radio" name="planet" id="neptune"value="Neptune">
+            <label for="neptune">Neptune</label><br>
+            <input type="radio" name="planet" id="pluto" value="Pluto">
+            <label for="pluto">Pluto</label><br>
+        </div>
+
+        <br>
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I agree to the <a href="www.google.com">terms and conditions</a></label><br>
+            <br>
+            <button type="reset">Reset</button>
+            <button type="submit">Ask away</button>
+</form>
+<!-- end of the form-->
+</body>
+</html>
