@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "e709c045-80cf-4fda-97f9-f085814fc616",
+		"name": "My Weather App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36887214"
+	},
+	"item": [
+		{
+			"name": "get weather for a city",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?appid=69518b1f8f16c35f8705550dc4161056&units=metric&q=Cluj",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "appid",
+							"value": "69518b1f8f16c35f8705550dc4161056"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "q",
+							"value": "Cluj"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get forecast",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/forecast?appid=69518b1f8f16c35f8705550dc4161056&units=metric&q=Cluj",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "appid",
+							"value": "69518b1f8f16c35f8705550dc4161056"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "q",
+							"value": "Cluj"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get icon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://openweathermap.org/img/w/10d.png",
+					"protocol": "http",
+					"host": [
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"img",
+						"w",
+						"10d.png"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
